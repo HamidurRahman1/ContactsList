@@ -14,7 +14,7 @@ public class GraphGUI extends View
         }
         catch(Exception ex)
         {
-            System.out.println(ex.getMessage() + "\n" + ex.getCause() + "\n" + ex.getStackTrace());
+            System.out.println(ex.getMessage() + "\n" + ex.getCause() + "\n" + ex.getStackTrace().toString());
             Platform.exit();
         }
     }

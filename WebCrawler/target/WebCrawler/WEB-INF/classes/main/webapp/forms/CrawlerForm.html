@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crawler Form</title>
+</head>
+<body>
+
+    <form action="../crawl" method="get">
+        <label for="url">URL to crawl: </label>
+        <input type="text" name="url" id="url" placeholder="url ..." required>
+        <label for="url">Provided url(parent) will be crawled.</label>
+        <br>
+
+        <label for="linksToCrawl">Links to crawl: (0-5): </label>
+        <input type="number" name="linksToCrawl" id="linksToCrawl" value=0 min=0 max=5>
+        <label for="linksToCrawl">Number of links will be crawled from provided url. At least 0 and max 5.</label>
+        <br>
+
+        <label for="maxDepth">Max Depth (0-2): </label>
+        <input type="number" name="maxDepth" id="maxDepth" value=0 min=0 max=2>
+        <label for="maxDepth">For each links found on the provided url. How many child links to visit. Default to 0 and max 2.</label>
+        <br>
+
+        <input type="submit" value="Crawl">
+    </form>
+
+</body>
+</html>

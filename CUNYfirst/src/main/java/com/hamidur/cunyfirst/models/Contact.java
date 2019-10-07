@@ -6,8 +6,8 @@ public class Contact
 {
     private Integer contactId;
     private String homePhone;
-    private String personalEmail;
     private String cellPhone;
+    private String personalEmail;
     private String collegeEmail;
     
     public Contact() {}
@@ -24,7 +24,15 @@ public class Contact
         this.setCellPhone(cellPhone);
         this.setCollegeEmail(collegeEmail);
     }
-    
+
+    public Integer getContactId() {
+        return contactId;
+    }
+
+    public void setContactId(Integer contactId) {
+        this.contactId = contactId;
+    }
+
     public String getHomePhone()
     {
         return homePhone;
@@ -70,7 +78,7 @@ public class Contact
         if (this == o) return true;
         if (!(o instanceof Contact)) return false;
         Contact contact = (Contact) o;
-        return Objects.equals(contactId, contact.contactId) &&
+        return Objects.equals(getContactId(), contact.getContactId()) &&
                 Objects.equals(getHomePhone(), contact.getHomePhone()) &&
                 Objects.equals(getPersonalEmail(), contact.getPersonalEmail()) &&
                 Objects.equals(getCellPhone(), contact.getCellPhone()) &&
@@ -79,7 +87,7 @@ public class Contact
 
     @Override
     public int hashCode() {
-        return Objects.hash(contactId, getHomePhone(), getPersonalEmail(), getCellPhone(), getCollegeEmail());
+        return Objects.hash(getContactId(), getHomePhone(), getPersonalEmail(), getCellPhone(), getCollegeEmail());
     }
 
     @Override

@@ -12,6 +12,117 @@ public class Student
     private String ssn;
 
     private Address address;
-    private Set<SecurityQuestionAnswer> questionAnswerSet;
+    private Contact contact;
+    private HighSchoolInfo highSchoolInfo;
+    private Login login;
 
+    private Set<SecurityQuestionAnswer> questionAnswers;
+    private Set<FAFSA> fafsas;
+
+    public Student() {}
+
+    public Integer getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(Integer studentId) {
+        this.studentId = studentId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getSsn() {
+        return ssn;
+    }
+
+    public void setSsn(String ssn) {
+        this.ssn = ssn;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public void setContact(Contact contact) {
+        this.contact = contact;
+    }
+
+    public HighSchoolInfo getHighSchoolInfo() {
+        return highSchoolInfo;
+    }
+
+    public void setHighSchoolInfo(HighSchoolInfo highSchoolInfo) {
+        this.highSchoolInfo = highSchoolInfo;
+    }
+
+    public Login getLogin() {
+        return login;
+    }
+
+    public void setLogin(Login login) {
+        this.login = login;
+    }
+
+    public Set<SecurityQuestionAnswer> getQuestionAnswers() {
+        return questionAnswers;
+    }
+
+    public void setQuestionAnswers(Set<SecurityQuestionAnswer> questionAnswers) {
+        this.questionAnswers = questionAnswers;
+    }
+
+    public Set<FAFSA> getFafsas() {
+        return fafsas;
+    }
+
+    public void setFafsas(Set<FAFSA> fafsas) {
+        this.fafsas = fafsas;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "studentId=" + studentId +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", ssn='" + ssn + '\'' +
+                ", address=" + address +
+                ", contact=" + contact +
+                ", highSchoolInfo=" + highSchoolInfo +
+                ", login=" + login +
+                ", questionAnswers=" + questionAnswers +
+                ", fafsas=" + fafsas +
+                '}';
+    }
 }

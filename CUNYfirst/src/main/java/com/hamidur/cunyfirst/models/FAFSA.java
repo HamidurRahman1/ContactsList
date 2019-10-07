@@ -8,7 +8,13 @@ public class FAFSA
     private Term term;
     
     public FAFSA() {}
-    
+
+    public FAFSA(Integer year, Double amount, Term term) {
+        this.year = year;
+        this.amount = amount;
+        this.term = term;
+    }
+
     public Integer getFafsaId()
     {
         return fafsaId;

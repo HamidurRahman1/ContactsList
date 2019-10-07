@@ -9,8 +9,8 @@
         <module name="CUNYfirst" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CUNYfirst" target="1.5" />
+    <bytecodeTargetLevel target="9">
+      <module name="CUNYfirst" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

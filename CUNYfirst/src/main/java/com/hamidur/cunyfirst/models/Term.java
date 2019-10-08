@@ -9,15 +9,15 @@ public class Term
     
     public Term() {}
 
+    public Term(String termName)
+    {
+        this.setTermName(termName);
+    }
+
     public Term(Integer termId, String termName)
     {
         this.termId = termId;
         this.termName = termName;
-    }
-
-    public Term(String termName)
-    {
-        this.setTermName(termName);
     }
     
     public Integer getTermId()

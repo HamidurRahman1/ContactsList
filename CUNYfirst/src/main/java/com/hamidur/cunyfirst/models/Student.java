@@ -14,10 +14,12 @@ public class Student
     private Address address;
     private Contact contact;
     private HighSchoolInfo highSchoolInfo;
+    private TransferInfo transferInfo;
     private Login login;
 
     private Set<SecurityQuestionAnswer> questionAnswers;
     private Set<FAFSA> fafsas;
+    private Set<StudentCourse> studentCourses;
 
     public Student() {}
 
@@ -85,6 +87,14 @@ public class Student
         this.highSchoolInfo = highSchoolInfo;
     }
 
+    public TransferInfo getTransferInfo() {
+        return transferInfo;
+    }
+
+    public void setTransferInfo(TransferInfo transferInfo) {
+        this.transferInfo = transferInfo;
+    }
+
     public Login getLogin() {
         return login;
     }
@@ -107,6 +117,14 @@ public class Student
 
     public void setFafsas(Set<FAFSA> fafsas) {
         this.fafsas = fafsas;
+    }
+
+    public Set<StudentCourse> getStudentCourses() {
+        return studentCourses;
+    }
+
+    public void setStudentCourses(Set<StudentCourse> studentCourses) {
+        this.studentCourses = studentCourses;
     }
 
     @Override

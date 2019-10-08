@@ -6,16 +6,25 @@ public class Login
 {
 	private String userName;
 	private String password;
+	private Student student;
 	
 	public Login() {}
-	
-	public Login(String userName, String password)
-	{
-		this.setUserName(userName);
-		this.setPassword(password);
-	}
 
-	public String getUserName() {
+    public Login(String userName, String password, Student student) {
+        this.userName = userName;
+        this.password = password;
+        this.student = student;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setStudent(Student student) {
+        this.student = student;
+    }
+
+    public String getUserName() {
 		return userName;
 	}
 

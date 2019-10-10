@@ -74,6 +74,14 @@ public class Course
         this.description = description;
     }
 
+    public Term getTerm() {
+        return term;
+    }
+
+    public void setTerm(Term term) {
+        this.term = term;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

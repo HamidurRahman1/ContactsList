@@ -13,6 +13,7 @@ public class Course
     private CourseLevel courseLevel;
     private Float credits;
     private String description;
+    private Term term;
 
     public Course() {}
 

@@ -1,5 +1,7 @@
 package com.hamidur.cunyfirst.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -11,14 +13,22 @@ public class Student
     private LocalDate dateOfBirth;
     private String ssn;
 
+    @Autowired
     private Address address;
+    @Autowired
     private Contact contact;
+    @Autowired
     private HighSchoolInfo highSchoolInfo;
+    @Autowired
     private TransferInfo transferInfo;
+    @Autowired
     private Login login;
 
+    @Autowired
     private Set<SecurityQuestionAnswer> questionAnswers;
+    @Autowired
     private Set<FAFSA> fafsas;
+    @Autowired
     private Set<StudentCourse> studentCourses;
 
     public Student() {}

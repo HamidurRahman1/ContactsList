@@ -1,5 +1,6 @@
 package com.hamidur.cunyfirst.tests;
 
+import com.hamidur.cunyfirst.configs.BeanConfiguration;
 import com.hamidur.cunyfirst.models.Address;
 import com.hamidur.cunyfirst.models.Contact;
 import com.hamidur.cunyfirst.models.Course;
@@ -17,6 +18,7 @@ import com.hamidur.cunyfirst.models.modelProps.CourseName;
 import com.hamidur.cunyfirst.models.modelProps.CourseStatus;
 import com.hamidur.cunyfirst.models.modelProps.Grade;
 import com.hamidur.cunyfirst.utils.DatabaseUtil;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -28,7 +30,17 @@ public class Tester
 {
     public static void main(String[] args)
     {
+        testIocDi();
+    }
 
+    private static void testIocDi()
+    {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanConfiguration.class);
+
+        Student student = context.getBean(Student.class);
+
+        System.out.println(student.getFirstName() + " " + student.getLastName());
+        context.close();
     }
 
     private static void testDatabaseConnection()

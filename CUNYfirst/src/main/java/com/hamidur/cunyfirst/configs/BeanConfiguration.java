@@ -21,7 +21,7 @@ import java.util.LinkedHashSet;
 import java.util.Set;
 
 @Configuration
-@ComponentScan(basePackages = "com.hamidur.cunyfirst")
+@ComponentScan(basePackages = {"com.hamidur.cunyfirst.models"})
 public class BeanConfiguration
 {
     @Bean

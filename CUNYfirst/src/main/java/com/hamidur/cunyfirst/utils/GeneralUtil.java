@@ -3,7 +3,7 @@ package com.hamidur.cunyfirst.utils;
 import java.sql.Date;
 import java.time.LocalDate;
 
-public class Utils
+public class GeneralUtil
 {
     public static LocalDate convertToLocalDate(Date sqlDate)
     {

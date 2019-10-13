@@ -28,8 +28,6 @@ public class Student
     private Set<SecurityQuestionAnswer> questionAnswers;
     @Autowired
     private Set<FAFSA> fafsas;
-    @Autowired
-    private Set<StudentCourse> studentCourses;
 
     public Student() {}
 
@@ -127,14 +125,6 @@ public class Student
 
     public void setFafsas(Set<FAFSA> fafsas) {
         this.fafsas = fafsas;
-    }
-
-    public Set<StudentCourse> getStudentCourses() {
-        return studentCourses;
-    }
-
-    public void setStudentCourses(Set<StudentCourse> studentCourses) {
-        this.studentCourses = studentCourses;
     }
 
     @Override

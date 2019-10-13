@@ -9,7 +9,6 @@ import com.hamidur.cunyfirst.models.generalModels.Login;
 import com.hamidur.cunyfirst.models.generalModels.SecurityQuestion;
 import com.hamidur.cunyfirst.models.generalModels.SecurityQuestionAnswer;
 import com.hamidur.cunyfirst.models.generalModels.Student;
-import com.hamidur.cunyfirst.models.generalModels.StudentCourse;
 import com.hamidur.cunyfirst.models.generalModels.Term;
 import com.hamidur.cunyfirst.models.generalModels.TransferInfo;
 

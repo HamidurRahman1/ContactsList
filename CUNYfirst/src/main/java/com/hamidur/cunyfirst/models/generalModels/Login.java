@@ -6,24 +6,14 @@ public class Login
 {
 	private String userName;
 	private String password;
-	private Student student;
 	private Boolean isActive;
 	
 	public Login() {}
 
-    public Login(String userName, String password, Student student, Boolean isActive) {
+    public Login(String userName, String password, Boolean isActive) {
         this.userName = userName;
         this.password = password;
-        this.student = student;
         this.isActive = isActive;
-    }
-
-    public Student getStudent() {
-        return student;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
     }
 
     public String getUserName() {
@@ -50,22 +40,27 @@ public class Login
         isActive = active;
     }
 
-    @Override
+	@Override
 	public boolean equals(Object o) {
 		if (this == o) return true;
 		if (!(o instanceof Login)) return false;
 		Login login = (Login) o;
-		return Objects.equals(getUserName(), login.getUserName());
+		return Objects.equals(getUserName(), login.getUserName()) &&
+				Objects.equals(getPassword(), login.getPassword()) &&
+				Objects.equals(isActive, login.isActive);
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(getUserName());
+		return Objects.hash(getUserName(), getPassword(), isActive);
 	}
 
 	@Override
-	public String toString()
-	{
-		return "Login{" + "userName='" + userName + '\'' + ", password='" + password + '\'' + '}';
+	public String toString() {
+		return "Login{" +
+				"userName='" + userName + '\'' +
+				", password='" + password + '\'' +
+				", isActive=" + isActive +
+				'}';
 	}
 }

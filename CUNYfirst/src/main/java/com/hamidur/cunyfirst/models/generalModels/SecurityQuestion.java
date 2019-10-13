@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class SecurityQuestion
 {
-    private Integer questionId;
     private String question;
     
     public SecurityQuestion() {}
@@ -12,16 +11,6 @@ public class SecurityQuestion
     public SecurityQuestion(String question)
     {
         this.setQuestion(question);
-    }
-    
-    public Integer getQuestionId()
-    {
-        return questionId;
-    }
-    
-    public void setQuestionId(Integer questionId)
-    {
-        this.questionId = questionId;
     }
     
     public String getQuestion()
@@ -33,25 +22,24 @@ public class SecurityQuestion
     {
         this.question = question;
     }
-    
+
     @Override
-    public boolean equals(Object o)
-    {
-        if(this == o) return true;
-        if(! (o instanceof SecurityQuestion)) return false;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof SecurityQuestion)) return false;
         SecurityQuestion that = (SecurityQuestion) o;
-        return getQuestionId().equals(that.getQuestionId()) && getQuestion().equals(that.getQuestion());
+        return Objects.equals(getQuestion(), that.getQuestion());
     }
-    
+
     @Override
-    public int hashCode()
-    {
-        return Objects.hash(getQuestionId(), getQuestion());
+    public int hashCode() {
+        return Objects.hash(getQuestion());
     }
-    
+
     @Override
-    public String toString()
-    {
-        return "SecurityQuestion{" + "questionId=" + questionId + ", question='" + question + '\'' + '}';
+    public String toString() {
+        return "SecurityQuestion{" +
+                "question='" + question + '\'' +
+                '}';
     }
 }

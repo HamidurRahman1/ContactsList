@@ -4,24 +4,14 @@ import java.util.Objects;
 
 public class SecurityQuestionAnswer
 {
-    private Integer studentId;
     private SecurityQuestion securityQuestion;
     private String answer;
     
     public SecurityQuestionAnswer() {}
 
-    public SecurityQuestionAnswer(Integer studentId, SecurityQuestion securityQuestion, String answer) {
-        this.studentId = studentId;
+    public SecurityQuestionAnswer(SecurityQuestion securityQuestion, String answer) {
         this.securityQuestion = securityQuestion;
         this.answer = answer;
-    }
-
-    public Integer getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(Integer studentId) {
-        this.studentId = studentId;
     }
 
     public SecurityQuestion getSecurityQuestion() {
@@ -41,26 +31,23 @@ public class SecurityQuestionAnswer
     }
 
     @Override
-    public boolean equals(Object o)
-    {
+    public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof SecurityQuestionAnswer)) return false;
         SecurityQuestionAnswer that = (SecurityQuestionAnswer) o;
-        return Objects.equals(getStudentId(), that.getStudentId()) &&
-                Objects.equals(getSecurityQuestion(), that.getSecurityQuestion());
+        return Objects.equals(getSecurityQuestion(), that.getSecurityQuestion()) &&
+                Objects.equals(getAnswer(), that.getAnswer());
     }
 
     @Override
-    public int hashCode()
-    {
-        return Objects.hash(getStudentId(), getSecurityQuestion());
+    public int hashCode() {
+        return Objects.hash(getSecurityQuestion(), getAnswer());
     }
 
     @Override
     public String toString() {
         return "SecurityQuestionAnswer{" +
-                "studentId=" + studentId +
-                ", securityQuestion=" + securityQuestion +
+                "securityQuestion=" + securityQuestion +
                 ", answer='" + answer + '\'' +
                 '}';
     }

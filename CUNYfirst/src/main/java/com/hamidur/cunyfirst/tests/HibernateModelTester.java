@@ -1,7 +1,25 @@
 package com.hamidur.cunyfirst.tests;
 
-import com.hamidur.cunyfirst.models.generalModels.Student;
+
+import com.hamidur.cunyfirst.models.dbModels.Address;
+import com.hamidur.cunyfirst.models.dbModels.Contact;
+import com.hamidur.cunyfirst.models.dbModels.Course;
+import com.hamidur.cunyfirst.models.dbModels.CourseLevel;
+import com.hamidur.cunyfirst.models.dbModels.CourseName;
+import com.hamidur.cunyfirst.models.dbModels.CourseStatus;
+import com.hamidur.cunyfirst.models.dbModels.FAFSA;
+import com.hamidur.cunyfirst.models.dbModels.Gender;
+import com.hamidur.cunyfirst.models.dbModels.HighSchoolInfo;
+import com.hamidur.cunyfirst.models.dbModels.Login;
+import com.hamidur.cunyfirst.models.dbModels.SecurityQuestion;
+import com.hamidur.cunyfirst.models.dbModels.Student;
+import com.hamidur.cunyfirst.models.dbModels.StudentCourse;
+import com.hamidur.cunyfirst.models.dbModels.StudentSecurityQuestion;
+import com.hamidur.cunyfirst.models.dbModels.Term;
+import com.hamidur.cunyfirst.models.dbModels.TransferInfo;
+
 import com.hamidur.cunyfirst.utils.HibernateUtil;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 

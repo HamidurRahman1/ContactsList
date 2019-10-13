@@ -1,8 +1,9 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
+import java.util.Objects;
+
 public class TransferInfo
 {
-    private Integer transferInfoId;
     private String schoolName;
     private Term term;
 
@@ -11,20 +12,6 @@ public class TransferInfo
     public TransferInfo(String schoolName, Term term) {
         this.schoolName = schoolName;
         this.term = term;
-    }
-
-    public TransferInfo(Integer transferInfoId, String schoolName, Term term) {
-        this.transferInfoId = transferInfoId;
-        this.schoolName = schoolName;
-        this.term = term;
-    }
-
-    public Integer getTransferInfoId() {
-        return transferInfoId;
-    }
-
-    public void setTransferInfoId(Integer transferInfoId) {
-        this.transferInfoId = transferInfoId;
     }
 
     public String getSchoolName() {
@@ -44,10 +31,23 @@ public class TransferInfo
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof TransferInfo)) return false;
+        TransferInfo that = (TransferInfo) o;
+        return Objects.equals(getSchoolName(), that.getSchoolName()) &&
+                Objects.equals(getTerm(), that.getTerm());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getSchoolName(), getTerm());
+    }
+
+    @Override
     public String toString() {
         return "TransferInfo{" +
-                "transferInfoId=" + transferInfoId +
-                ", schoolName='" + schoolName + '\'' +
+                "schoolName='" + schoolName + '\'' +
                 ", term=" + term +
                 '}';
     }

@@ -9,7 +9,6 @@ import com.hamidur.cunyfirst.models.generalModels.HighSchoolInfo;
 import com.hamidur.cunyfirst.models.generalModels.Login;
 import com.hamidur.cunyfirst.models.generalModels.SecurityQuestion;
 import com.hamidur.cunyfirst.models.generalModels.Student;
-import com.hamidur.cunyfirst.models.generalModels.StudentCourse;
 import com.hamidur.cunyfirst.models.generalModels.Term;
 import com.hamidur.cunyfirst.models.generalModels.TransferInfo;
 
@@ -32,7 +31,6 @@ public class HibernateUtil
                 .addAnnotatedClass(Address.class)
                 .addAnnotatedClass(Term.class)
                 .addAnnotatedClass(SecurityQuestion.class)
-                .addAnnotatedClass(StudentSecurityQuestion.class)
                 .addAnnotatedClass(Login.class)
                 .addAnnotatedClass(Contact.class)
                 .addAnnotatedClass(HighSchoolInfo.class)

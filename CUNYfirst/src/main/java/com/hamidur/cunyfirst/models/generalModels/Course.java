@@ -4,31 +4,21 @@ import java.util.Objects;
 
 public class Course
 {
-    private Integer courseId;
     private String courseTitle;
     private CourseName courseName;
-    private CourseLevel courseLevel;
+    private Integer courseLevel;
     private Float credits;
     private String description;
-    private Term term;
 
     public Course() {}
 
-    public Course(Integer courseId, String courseTitle, CourseName courseName, CourseLevel courseLevel, Float credits, String description) {
-        this.courseId = courseId;
+    public Course(String courseTitle, CourseName courseName, Integer courseLevel, Float credits, String description)
+    {
         this.courseTitle = courseTitle;
         this.courseName = courseName;
         this.courseLevel = courseLevel;
         this.credits = credits;
         this.description = description;
-    }
-
-    public Integer getCourseId() {
-        return courseId;
-    }
-
-    public void setCourseId(Integer courseId) {
-        this.courseId = courseId;
     }
 
     public String getCourseTitle() {
@@ -47,11 +37,11 @@ public class Course
         this.courseName = courseName;
     }
 
-    public CourseLevel getCourseLevel() {
+    public Integer getCourseLevel() {
         return courseLevel;
     }
 
-    public void setCourseLevel(CourseLevel courseLevel) {
+    public void setCourseLevel(Integer courseLevel) {
         this.courseLevel = courseLevel;
     }
 
@@ -71,33 +61,27 @@ public class Course
         this.description = description;
     }
 
-    public Term getTerm() {
-        return term;
-    }
-
-    public void setTerm(Term term) {
-        this.term = term;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Course)) return false;
         Course course = (Course) o;
-        return getCourseName() == course.getCourseName() &&
-                getCourseLevel() == course.getCourseLevel();
+        return Objects.equals(getCourseTitle(), course.getCourseTitle()) &&
+                getCourseName() == course.getCourseName() &&
+                Objects.equals(getCourseLevel(), course.getCourseLevel()) &&
+                Objects.equals(getCredits(), course.getCredits()) &&
+                Objects.equals(getDescription(), course.getDescription());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getCourseName(), getCourseLevel());
+        return Objects.hash(getCourseTitle(), getCourseName(), getCourseLevel(), getCredits(), getDescription());
     }
 
     @Override
     public String toString() {
         return "Course{" +
-                "courseId=" + courseId +
-                ", courseTitle='" + courseTitle + '\'' +
+                "courseTitle='" + courseTitle + '\'' +
                 ", courseName=" + courseName +
                 ", courseLevel=" + courseLevel +
                 ", credits=" + credits +

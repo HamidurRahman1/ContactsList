@@ -1,8 +1,9 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
+import java.util.Objects;
+
 public class HighSchoolInfo
 {
-    private Integer highSchoolId;
     private String highSchoolName;
     private Integer year;
     private String city;
@@ -16,16 +17,6 @@ public class HighSchoolInfo
         this.setYear(year);
         this.setCity(city);
         this.setCountry(country);
-    }
-    
-    public Integer getHighSchoolId()
-    {
-        return highSchoolId;
-    }
-    
-    public void setHighSchoolId(Integer highSchoolId)
-    {
-        this.highSchoolId = highSchoolId;
     }
     
     public String getHighSchoolName()
@@ -67,10 +58,30 @@ public class HighSchoolInfo
     {
         this.country = country;
     }
-    
+
     @Override
-    public String toString()
-    {
-        return "HighSchoolInfo{" + "highSchoolId=" + highSchoolId + ", highSchoolName='" + highSchoolName + '\'' + ", year=" + year + ", city='" + city + '\'' + ", country='" + country + '\'' + '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof HighSchoolInfo)) return false;
+        HighSchoolInfo that = (HighSchoolInfo) o;
+        return Objects.equals(getHighSchoolName(), that.getHighSchoolName()) &&
+                Objects.equals(getYear(), that.getYear()) &&
+                Objects.equals(getCity(), that.getCity()) &&
+                Objects.equals(getCountry(), that.getCountry());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getHighSchoolName(), getYear(), getCity(), getCountry());
+    }
+
+    @Override
+    public String toString() {
+        return "HighSchoolInfo{" +
+                "highSchoolName='" + highSchoolName + '\'' +
+                ", year=" + year +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

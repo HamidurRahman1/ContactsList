@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Address
 {
-    private Integer addressId;
     private String street;
     private String crossStreet;
     private String city;
@@ -20,16 +19,6 @@ public class Address
         this.setCity(city);
         this.setState(state);
         this.setZipcode(zipcode);
-    }
-    
-    public Integer getAddressId()
-    {
-        return addressId;
-    }
-    
-    public void setAddressId(Integer addressId)
-    {
-        this.addressId = addressId;
     }
     
     public String getStreet()
@@ -87,8 +76,7 @@ public class Address
         if (this == o) return true;
         if (!(o instanceof Address)) return false;
         Address address = (Address) o;
-        return Objects.equals(getAddressId(), address.getAddressId()) &&
-                Objects.equals(getStreet(), address.getStreet()) &&
+        return Objects.equals(getStreet(), address.getStreet()) &&
                 Objects.equals(getCrossStreet(), address.getCrossStreet()) &&
                 Objects.equals(getCity(), address.getCity()) &&
                 Objects.equals(getState(), address.getState()) &&
@@ -97,12 +85,17 @@ public class Address
 
     @Override
     public int hashCode() {
-        return Objects.hash(getAddressId(), getStreet(), getCrossStreet(), getCity(), getState(), getZipcode());
+        return Objects.hash(getStreet(), getCrossStreet(), getCity(), getState(), getZipcode());
     }
 
     @Override
-    public String toString()
-    {
-        return "Address{" + "addressId=" + addressId + ", street='" + street + '\'' + ", crossStreet='" + crossStreet + '\'' + ", city='" + city + '\'' + ", state='" + state + '\'' + ", zipcode='" + zipcode + '\'' + '}';
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", crossStreet='" + crossStreet + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
     }
 }

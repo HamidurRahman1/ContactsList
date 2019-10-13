@@ -1,32 +1,33 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
-public enum Grade
+public class Grade
 {
-    A_PLUS("A+"), A("A"), A_MINUS("A-"),
-    B_PLUS("B+"), B("B"), B_MINUS("B-"),
-    C_PLUS("C+"), C("C"), C_MINUS("C-"),
-    D_PLUS("D+"), D("D"), D_MINUS("D-"),
+    public static final String A_PLUS = "A+";
+    public static final String A = "A";
+    public static final String A_MINUS = "A-";
 
-    PASS("P"),
-    SATISFACTORY("S"),
-    UNSATISFACTORY("U"),
+    public static final String B_PLUS = "B+";
+    public static final String B = "B";
+    public static final String B_MINUS = "B-";
 
-    REPEAT("R"),
+    public static final String C_PLUS = "C+";
+    public static final String C = "C";
+    public static final String C_MINUS = "C-";
 
-    WU("WU"), W("W"),
-    WN("WN"), INC("INC"),
+    public static final String D_PLUS = "D+";
+    public static final String D = "D";
+    public static final String D_MINUS = "D-";
 
-    WAVED("@");
+    public static final String PASS = "P";
+    public static final String SATISFACTORY = "S";
+    public static final String UNSATISFACTORY = "U";
 
-    private final String value;
+    public static final String REPEAT = "R";
 
-    Grade(final String newValue)
-    {
-        value = newValue;
-    }
+    public static final String WU = "WU";
+    public static final String W = "W";
+    public static final String WN = "WN";
+    public static final String INC = "INC";
 
-    public String getValue()
-    {
-        return value;
-    }
+    public static final String WAVED ="@";
 }

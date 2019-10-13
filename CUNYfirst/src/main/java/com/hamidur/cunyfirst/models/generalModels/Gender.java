@@ -1,7 +1,6 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
-public enum CourseStatus
+public enum Gender
 {
-    INP, TKN, TRN
+    M, F, O
 }
-

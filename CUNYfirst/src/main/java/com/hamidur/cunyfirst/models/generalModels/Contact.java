@@ -4,7 +4,6 @@ import java.util.Objects;
 
 public class Contact
 {
-    private Integer contactId;
     private String homePhone;
     private String cellPhone;
     private String personalEmail;
@@ -23,14 +22,6 @@ public class Contact
         this.setPersonalEmail(personalEmail);
         this.setCellPhone(cellPhone);
         this.setCollegeEmail(collegeEmail);
-    }
-
-    public Integer getContactId() {
-        return contactId;
-    }
-
-    public void setContactId(Integer contactId) {
-        this.contactId = contactId;
     }
 
     public String getHomePhone()
@@ -78,21 +69,24 @@ public class Contact
         if (this == o) return true;
         if (!(o instanceof Contact)) return false;
         Contact contact = (Contact) o;
-        return Objects.equals(getContactId(), contact.getContactId()) &&
-                Objects.equals(getHomePhone(), contact.getHomePhone()) &&
-                Objects.equals(getPersonalEmail(), contact.getPersonalEmail()) &&
+        return Objects.equals(getHomePhone(), contact.getHomePhone()) &&
                 Objects.equals(getCellPhone(), contact.getCellPhone()) &&
+                Objects.equals(getPersonalEmail(), contact.getPersonalEmail()) &&
                 Objects.equals(getCollegeEmail(), contact.getCollegeEmail());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getContactId(), getHomePhone(), getPersonalEmail(), getCellPhone(), getCollegeEmail());
+        return Objects.hash(getHomePhone(), getCellPhone(), getPersonalEmail(), getCollegeEmail());
     }
 
     @Override
-    public String toString()
-    {
-        return "Contact{" + "contactId=" + contactId + ", homePhone='" + homePhone + '\'' + ", personalEmail='" + personalEmail + '\'' + ", cellPhone='" + cellPhone + '\'' + ", collegeEmail='" + collegeEmail + '\'' + '}';
+    public String toString() {
+        return "Contact{" +
+                "homePhone='" + homePhone + '\'' +
+                ", cellPhone='" + cellPhone + '\'' +
+                ", personalEmail='" + personalEmail + '\'' +
+                ", collegeEmail='" + collegeEmail + '\'' +
+                '}';
     }
 }

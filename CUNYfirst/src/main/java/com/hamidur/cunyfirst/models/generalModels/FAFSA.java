@@ -1,8 +1,9 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
+import java.util.Objects;
+
 public class FAFSA
 {
-    private Integer fafsaId;
     private Integer year;
     private Double amount;
     private Term term;
@@ -13,16 +14,6 @@ public class FAFSA
         this.year = year;
         this.amount = amount;
         this.term = term;
-    }
-
-    public Integer getFafsaId()
-    {
-        return fafsaId;
-    }
-    
-    public void setFafsaId(Integer fafsaId)
-    {
-        this.fafsaId = fafsaId;
     }
     
     public Integer getYear()
@@ -54,10 +45,28 @@ public class FAFSA
     {
         this.amount = amount;
     }
-    
+
     @Override
-    public String toString()
-    {
-        return "FAFSA{" + "fafsaId=" + fafsaId + ", year=" + year + ", term=" + term.getTermName() + ", amount=" + amount + '}';
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof FAFSA)) return false;
+        FAFSA fafsa = (FAFSA) o;
+        return Objects.equals(getYear(), fafsa.getYear()) &&
+                Objects.equals(getAmount(), fafsa.getAmount()) &&
+                Objects.equals(getTerm(), fafsa.getTerm());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getYear(), getAmount(), getTerm());
+    }
+
+    @Override
+    public String toString() {
+        return "FAFSA{" +
+                "year=" + year +
+                ", amount=" + amount +
+                ", term=" + term +
+                '}';
     }
 }

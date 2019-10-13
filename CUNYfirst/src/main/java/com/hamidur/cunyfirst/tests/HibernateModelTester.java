@@ -2,7 +2,8 @@ package com.hamidur.cunyfirst.tests;
 
 import com.hamidur.cunyfirst.models.generalModels.Student;
 import com.hamidur.cunyfirst.utils.HibernateUtil;
-import com.mysql.cj.xdevapi.SessionFactory;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 
 import java.time.LocalDate;
 import java.util.Arrays;

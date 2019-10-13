@@ -1,21 +1,27 @@
 package com.hamidur.cunyfirst.models.generalModels;
 
-public enum CourseLevel
+public class CourseLevel
 {
-    Level_101("101"), Level_102("102"), Level_103("103"), Level_106("106"),
-    Level_110("110"), Level_115("115"), Level_200("200"), Level_201("201"),
-    Level_202("202"), Level_210("210"), Level_231("231"), Level_235("235"),
-    Level_270("270"), Level_281("281"), Level_283("283"), Level_286("286");
+    public static final Integer Level_097 = 97;
 
-    private final String value;
+    public static final Integer Level_101 = 101;
+    public static final Integer Level_102 = 102;
+    public static final Integer Level_103 = 103;
+    public static final Integer Level_106 = 106;
 
-    CourseLevel(final String value)
-    {
-        this.value = value;
-    }
+    public static final Integer Level_110 = 110;
+    public static final Integer Level_115 = 115;
+    public static final Integer Level_125 = 125;
+    public static final Integer Level_200 = 200;
+    public static final Integer Level_201 = 201;
+    public static final Integer Level_202 = 202;
+    public static final Integer Level_210 = 210;
+    public static final Integer Level_231 = 231;
+    public static final Integer Level_235 = 235;
 
-    public String getValue()
-    {
-        return value;
-    }
+    public static final Integer Level_270 = 270;
+    public static final Integer Level_281 = 281;
+    public static final Integer Level_283 = 283;
+    public static final Integer Level_286 = 286;
+
 }

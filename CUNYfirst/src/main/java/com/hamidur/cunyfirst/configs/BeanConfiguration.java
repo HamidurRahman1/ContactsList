@@ -1,17 +1,17 @@
 package com.hamidur.cunyfirst.configs;
 
-import com.hamidur.cunyfirst.models.Address;
-import com.hamidur.cunyfirst.models.Contact;
-import com.hamidur.cunyfirst.models.Course;
-import com.hamidur.cunyfirst.models.FAFSA;
-import com.hamidur.cunyfirst.models.HighSchoolInfo;
-import com.hamidur.cunyfirst.models.Login;
-import com.hamidur.cunyfirst.models.SecurityQuestion;
-import com.hamidur.cunyfirst.models.SecurityQuestionAnswer;
-import com.hamidur.cunyfirst.models.Student;
-import com.hamidur.cunyfirst.models.StudentCourse;
-import com.hamidur.cunyfirst.models.Term;
-import com.hamidur.cunyfirst.models.TransferInfo;
+import com.hamidur.cunyfirst.models.generalModels.Address;
+import com.hamidur.cunyfirst.models.generalModels.Contact;
+import com.hamidur.cunyfirst.models.generalModels.Course;
+import com.hamidur.cunyfirst.models.generalModels.FAFSA;
+import com.hamidur.cunyfirst.models.generalModels.HighSchoolInfo;
+import com.hamidur.cunyfirst.models.generalModels.Login;
+import com.hamidur.cunyfirst.models.generalModels.SecurityQuestion;
+import com.hamidur.cunyfirst.models.generalModels.SecurityQuestionAnswer;
+import com.hamidur.cunyfirst.models.generalModels.Student;
+import com.hamidur.cunyfirst.models.generalModels.StudentCourse;
+import com.hamidur.cunyfirst.models.generalModels.Term;
+import com.hamidur.cunyfirst.models.generalModels.TransferInfo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,4 +1,4 @@
-package com.hamidur.cunyfirst.models;
+package com.hamidur.cunyfirst.models.generalModels;
 
 public class HighSchoolInfo
 {

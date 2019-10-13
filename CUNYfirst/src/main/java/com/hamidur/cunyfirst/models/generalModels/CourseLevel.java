@@ -1,4 +1,4 @@
-package com.hamidur.cunyfirst.models.modelProps;
+package com.hamidur.cunyfirst.models.generalModels;
 
 public enum CourseLevel
 {

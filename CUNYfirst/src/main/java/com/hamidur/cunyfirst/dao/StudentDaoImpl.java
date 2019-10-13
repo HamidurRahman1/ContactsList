@@ -1,8 +1,8 @@
 package com.hamidur.cunyfirst.dao;
 
-import com.hamidur.cunyfirst.models.Course;
-import com.hamidur.cunyfirst.models.Student;
-import com.hamidur.cunyfirst.models.Term;
+import com.hamidur.cunyfirst.models.generalModels.Course;
+import com.hamidur.cunyfirst.models.generalModels.Student;
+import com.hamidur.cunyfirst.models.generalModels.Term;
 
 import java.sql.Connection;
 import java.util.List;

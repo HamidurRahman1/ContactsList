@@ -1,7 +1,4 @@
-package com.hamidur.cunyfirst.models;
-
-import com.hamidur.cunyfirst.models.modelProps.CourseStatus;
-import com.hamidur.cunyfirst.models.modelProps.Grade;
+package com.hamidur.cunyfirst.models.generalModels;
 
 import java.util.Objects;
 

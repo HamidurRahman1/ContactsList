@@ -1,4 +1,4 @@
-package com.hamidur.cunyfirst.models;
+package com.hamidur.cunyfirst.models.generalModels;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

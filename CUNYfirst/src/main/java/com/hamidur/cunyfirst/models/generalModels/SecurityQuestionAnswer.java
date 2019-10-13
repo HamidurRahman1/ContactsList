@@ -1,4 +1,4 @@
-package com.hamidur.cunyfirst.models;
+package com.hamidur.cunyfirst.models.generalModels;
 
 import java.util.Objects;
 

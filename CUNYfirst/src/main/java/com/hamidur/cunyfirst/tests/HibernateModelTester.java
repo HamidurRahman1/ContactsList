@@ -1,6 +1,5 @@
 package com.hamidur.cunyfirst.tests;
 
-
 import com.hamidur.cunyfirst.models.dbModels.Address;
 import com.hamidur.cunyfirst.models.dbModels.Contact;
 import com.hamidur.cunyfirst.models.dbModels.Course;
@@ -40,19 +39,9 @@ public class HibernateModelTester
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        List<Student> students = getStudents(session);
+        student = session.get(Student.class, 10000001);
+        System.out.println(student.getAddresses());
 
-//        insertStudents(session, demoStudents());
-//        insertAddresses(session, students, demoAddresses());
-//        insertContacts(session, students, demoContacts());
-//        insertCourses(session, demoCourses());
-//        insertTerms(session, demoTerms());
-//        insertFafsas(session, students);
-//        insertSecurityQuestion(session, demoQuestions());
-//        insertStudentQuestions(session, students, getSecurityQuestions(session));
-//        insertHighSchoolInfo(session, students, demoHighSchoolInfo());
-//        insertLogins(session, students, demoLogins());
-//        insertTransferInfo(session, student, demoTransferInfo(getTerms(session)));
 
         session.getTransaction().commit();
         session.close();
@@ -106,19 +95,19 @@ public class HibernateModelTester
         }
     }
 
-    private static void insertFafsas(Session session, List<Student> students)
-    {
-        for(Student student: students)
-        {
-            List<FAFSA> fafsas = demoFafsas(getTerms(session));
-            for(FAFSA fafsa: fafsas)
-            {
-                student.addFafsa(fafsa);
-                session.save(fafsa);
-            }
-
-        }
-    }
+//    private static void insertFafsas(Session session, List<Student> students)
+//    {
+//        for(Student student: students)
+//        {
+//            List<FAFSA> fafsas = demoFafsas(getTerms(session));
+//            for(FAFSA fafsa: fafsas)
+//            {
+//                student.addFafsa(fafsa);
+//                session.save(fafsa);
+//            }
+//
+//        }
+//    }
 
     private static void insertSecurityQuestion(Session session, List<SecurityQuestion> questions)
     {
@@ -178,20 +167,20 @@ public class HibernateModelTester
         session.save(transferInfo);
     }
 
-    private static List<Student> getStudents(Session session)
-    {
-        return session.createQuery("from Student").list();
-    }
-
-    private static List<Term> getTerms(Session session)
-    {
-        return session.createQuery("from Term").list();
-    }
-
-    private static List<SecurityQuestion> getSecurityQuestions(Session session)
-    {
-        return session.createQuery("from SecurityQuestion").list();
-    }
+//    private static List<Student> getStudents(Session session)
+//    {
+//        return session.createQuery("from Student").list();
+//    }
+//
+//    private static List<Term> getTerms(Session session)
+//    {
+//        return session.createQuery("from Term").list();
+//    }
+//
+//    private static List<SecurityQuestion> getSecurityQuestions(Session session)
+//    {
+//        return session.createQuery("from SecurityQuestion").list();
+//    }
 
     private static List<Student> demoStudents()
     {
@@ -267,20 +256,20 @@ public class HibernateModelTester
         return new LinkedList <>(Arrays.asList(t1, t2, t3, t4));
     }
 
-    private static Set<StudentCourse> demoStudentCourses(Session session, Student student)
-    {
-        Set<StudentCourse> studentCourses = new LinkedHashSet<>();
-        List<Term> terms = session.createQuery("from Term").list();
-        List<Course> courses = session.createQuery("from Course").list();
-
-        StudentCourse s1 = new StudentCourse(student, courses.get(0), CourseStatus.TKN, terms.get(0));
-        StudentCourse s2 = new StudentCourse(student, courses.get(1), CourseStatus.TKN, terms.get(1));
-        StudentCourse s3 = new StudentCourse(student, courses.get(3), CourseStatus.TKN, terms.get(1));
-        StudentCourse s4 = new StudentCourse(student, courses.get(4), CourseStatus.TKN, terms.get(0));
-
-        studentCourses.addAll(Arrays.asList(s1, s2, s3, s4));
-        return studentCourses;
-    }
+//    private static Set<StudentCourse> demoStudentCourses(Session session, Student student)
+//    {
+//        Set<StudentCourse> studentCourses = new LinkedHashSet<>();
+//        List<Term> terms = session.createQuery("from Term").list();
+//        List<Course> courses = session.createQuery("from Course").list();
+//
+//        StudentCourse s1 = new StudentCourse(student, courses.get(0), CourseStatus.TKN, terms.get(0));
+//        StudentCourse s2 = new StudentCourse(student, courses.get(1), CourseStatus.TKN, terms.get(1));
+//        StudentCourse s3 = new StudentCourse(student, courses.get(3), CourseStatus.TKN, terms.get(1));
+//        StudentCourse s4 = new StudentCourse(student, courses.get(4), CourseStatus.TKN, terms.get(0));
+//
+//        studentCourses.addAll(Arrays.asList(s1, s2, s3, s4));
+//        return studentCourses;
+//    }
 
     private static List<Course> demoCourses()
     {

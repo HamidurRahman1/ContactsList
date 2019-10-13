@@ -36,7 +36,7 @@ public class BeanConfiguration
         student.setTransferInfo(transferInfo());
         student.setLogin(login());
 
-        student.setStudentCourses(studentCourses());
+//        student.setStudentCourses(studentCourses());
         student.setFafsas(fafsas());
         student.setQuestionAnswers(questionAnswers());
 
@@ -91,11 +91,11 @@ public class BeanConfiguration
         return new Course();
     }
 
-    @Bean
-    public StudentCourse studentCourse()
-    {
-        return new StudentCourse();
-    }
+//    @Bean
+//    public StudentCourse studentCourse()
+//    {
+//        return new StudentCourse();
+//    }
 
     @Bean
     public SecurityQuestion securityQuestion()
@@ -121,9 +121,9 @@ public class BeanConfiguration
         return new LinkedHashSet<>();
     }
 
-    @Bean
-    public Set<StudentCourse> studentCourses()
-    {
-        return new LinkedHashSet<>();
-    }
+//    @Bean
+//    public Set<StudentCourse> studentCourses()
+//    {
+//        return new LinkedHashSet<>();
+//    }
 }

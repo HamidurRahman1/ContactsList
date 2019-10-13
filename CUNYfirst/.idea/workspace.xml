@@ -8,16 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="c9fb1478-4bf2-49e3-9b58-583610bd5335" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CUNYfirst.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CUNYfirst.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/SecurityQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/SecurityQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/SecurityQuestionAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/SecurityQuestionAnswer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/StudentCourse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Term.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/TransferInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/TransferInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/HibernateModelTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/HibernateModelTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +24,7 @@
     <session id="-2107944168">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.5" value="2" />
@@ -44,29 +37,29 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="201" />
-          <entry key="jsp" value="7" />
+          <entry key="java" value="208" />
+          <entry key="jsp" value="8" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="201" />
-          <entry key="JSP" value="7" />
+          <entry key="JAVA" value="208" />
+          <entry key="JSP" value="8" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="26" />
-          <entry key="java" value="3760" />
+          <entry key="java" value="3829" />
           <entry key="jsp" value="36" />
           <entry key="xml" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3760" />
+          <entry key="JAVA" value="3829" />
           <entry key="JSP" value="36" />
           <entry key="PLAIN_TEXT" value="26" />
           <entry key="XML" value="67" />
@@ -75,17 +68,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="44" column="34" selection-end-line="134" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,7 +98,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/IoCConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/GeneralUtil.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Grade.java" />
@@ -132,7 +114,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/SecurityQuestionAnswer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Term.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/TransferInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/StudentCourse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/Contact.java" />
@@ -152,8 +133,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/TransferInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/Term.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/HibernateModelTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/HibernateModelTester.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java" />
       </list>
     </option>
   </component>
@@ -231,6 +214,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cunyfirst" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="dbModels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CUNYfirst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CUNYfirst" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cunyfirst" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,7 +250,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -277,7 +270,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Tester">
+  <component name="RunManager" selected="Application.HibernateModelTester">
+    <configuration name="HibernateModelTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hamidur.cunyfirst.tests.HibernateModelTester" />
+      <module name="CUNYfirst" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hamidur.cunyfirst.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hamidur.cunyfirst.tests.Tester" />
       <module name="CUNYfirst" />
@@ -290,9 +296,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="index.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/index.jsp">
-      <method v="2" />
     </configuration>
     <configuration name="index.jsp (1)" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.34" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
@@ -517,19 +520,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="Tomcat Server.index.jsp (4)" />
       <item itemvalue="Tomcat Server.index.jsp" />
       <item itemvalue="Tomcat Server.index.jsp (1)" />
       <item itemvalue="Application.Tester" />
+      <item itemvalue="Application.HibernateModelTester" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HibernateModelTester" />
         <item itemvalue="Application.Tester" />
         <item itemvalue="Tomcat Server.index.jsp (1)" />
         <item itemvalue="Tomcat Server.index.jsp" />
         <item itemvalue="Tomcat Server.index.jsp (4)" />
-        <item itemvalue="JavaScript Debug.index.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -558,7 +561,7 @@
       <workItem from="1570733348936" duration="1500000" />
       <workItem from="1570760262949" duration="277000" />
       <workItem from="1570904660007" duration="502000" />
-      <workItem from="1570924585840" duration="2023000" />
+      <workItem from="1570924585840" duration="2724000" />
     </task>
     <servers />
   </component>
@@ -568,12 +571,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21297000" />
+    <option name="totallyTimeSpent" value="21998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
+      <window_info id="Persistence" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1984127" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
@@ -611,13 +614,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedHashSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="152" column="11" selection-start-line="152" selection-start-column="11" selection-end-line="152" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/dao/StudentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -671,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/GeneralUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -713,20 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding>
-            <element signature="method#Address#1;class#Address#0" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1565#1566#0" expanded="true" />
-            <element signature="e#1927#1928#0" expanded="true" />
-            <element signature="e#2030#2031#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/StudentCourse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -952,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/StudentCourse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1007,28 +965,84 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="44" column="34" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/generalModels/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="73" column="13" lean-forward="true" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <folding>
+            <element signature="method#Address#1;class#Address#0" />
+            <element signature="e#1927#1928#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/test.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/configs/BeanConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="39" column="36" lean-forward="true" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/utils/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6">
+          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/models/dbModels/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/HibernateModelTester.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="106">
+          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#insertStudents#0;class#HibernateModelTester#0" />
             <element signature="method#insertAddresses#0;class#HibernateModelTester#0" />
             <element signature="method#insertCourses#0;class#HibernateModelTester#0" />
             <element signature="method#insertContacts#0;class#HibernateModelTester#0" />
             <element signature="method#insertTerms#0;class#HibernateModelTester#0" />
-            <element signature="method#insertFafsas#0;class#HibernateModelTester#0" />
+            <element signature="e#3689#3768#0" />
             <element signature="method#insertSecurityQuestion#0;class#HibernateModelTester#0" />
             <element signature="method#insertStudentQuestions#0;class#HibernateModelTester#0" />
             <element signature="method#insertHighSchoolInfo#0;class#HibernateModelTester#0" />
             <element signature="method#insertLogins#0;class#HibernateModelTester#0" />
             <element signature="method#insertTransferInfo#0;class#HibernateModelTester#0" />
-            <element signature="method#getSecurityQuestions#0;class#HibernateModelTester#0" />
+            <element signature="e#5845#5908#0" />
             <element signature="method#demoStudents#0;class#HibernateModelTester#0" />
             <element signature="method#demoAddresses#0;class#HibernateModelTester#0" />
             <element signature="method#demoContacts#0;class#HibernateModelTester#0" />
             <element signature="method#demoTerms#0;class#HibernateModelTester#0" />
-            <element signature="method#demoStudentCourses#0;class#HibernateModelTester#0" />
             <element signature="method#demoCourses#0;class#HibernateModelTester#0" />
             <element signature="method#demoFafsas#0;class#HibernateModelTester#0" />
             <element signature="method#demoQuestions#0;class#HibernateModelTester#0" />
@@ -1036,13 +1050,6 @@
             <element signature="method#demoLogins#0;class#HibernateModelTester#0" />
             <element signature="method#demoTransferInfo#0;class#HibernateModelTester#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/tests/Tester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="44" column="34" selection-end-line="134" />
         </state>
       </provider>
     </entry>
@@ -1100,12 +1107,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>CUNYfirst</last-edited>
+          <last-edited>Hibernate|CUNYfirst</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

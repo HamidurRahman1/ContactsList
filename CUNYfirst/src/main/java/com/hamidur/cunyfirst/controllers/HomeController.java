@@ -12,7 +12,7 @@ public class HomeController
         return "index";
     }
 
-    @RequestMapping("/c")
+    @RequestMapping("/student/login")
     public String home2()
     {
         return "test";

@@ -15,30 +15,28 @@ import java.util.Set;
 public class StudentService
 {
     public StudentService() {}
-    
+
     public void insertStudent(com.hamidur.cunyfirst.viewTier.models.Student student)
-    {
-    
-    }
-    
+    {}
+
     public void getStudent(Integer studentId) {}
-    
+
     public void getStudents() {}
-    
+
     public void updateStudent(com.hamidur.cunyfirst.viewTier.models.Student student) {}
-    
+
     public void deleteStudent(com.hamidur.cunyfirst.viewTier.models.Student student) {}
-    
+
     public void insertStudentAddress(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Address address) {}
     
     public void getStudentAddress(Integer studentId) {}
-    
+
     public void updateStudentAddress(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Address address) {}
-    
+
     public void insertStudentContact(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Contact contact) {}
     
     public void getStudentContact(Integer studentId) {}
-    
+
     public void updateStudentContact(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Contact contact)
     {}
     
@@ -92,8 +90,8 @@ public class StudentService
     public void getStudentBySSN(String ssn) {}
     public void getStudentByLogin(String userName, String password) {}
 
-    public boolean isExists(Integer studentId) {return false;}
-    public boolean isExists(String ssn) {return false;}
+    public boolean isStudentExists(Integer studentId) {return false;}
+    public boolean isStudentExists(String ssn) {return false;}
     public boolean isLoginExists(String userName) {return false;}
 
     public List<com.hamidur.cunyfirst.viewTier.models.Student> getAllStudents() {return new LinkedList<>();}

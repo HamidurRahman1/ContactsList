@@ -6,6 +6,7 @@ import java.util.Objects;
 
 public class Login implements Serializable
 {
+    @Size(min = 1, max = 40)
     private String username;
     @Size(min = 10, max = 13)
     private String password;

@@ -7,5 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/instructor")
 public class InstructorController
 {
-
+    @RequestMapping("/login")
+    public String instructorLogin()
+    {
+        return "instructor/login";
+    }
 }

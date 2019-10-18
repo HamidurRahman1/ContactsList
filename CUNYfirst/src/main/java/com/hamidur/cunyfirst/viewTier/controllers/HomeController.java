@@ -11,10 +11,4 @@ public class HomeController
     {
         return "index";
     }
-
-    @RequestMapping("/student/login")
-    public String home2()
-    {
-        return "test";
-    }
 }

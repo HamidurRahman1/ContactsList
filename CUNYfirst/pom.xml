@@ -11,24 +11,77 @@
   
   <dependencies>
 
+	  <!-- mysql connector for Java -> DEPENDENCY START -->
+	  <dependency>
+		  <groupId>mysql</groupId>
+		  <artifactId>mysql-connector-java</artifactId>
+		  <version>8.0.12</version>
+	  </dependency>
+	  <!-- mysql connector for Java -> DEPENDENCY END -->
+
+      <!-- Hibernate -> DEPENDENCY START -->
+      <dependency>
+          <groupId>org.hibernate</groupId>
+          <artifactId>hibernate-entitymanager</artifactId>
+          <version>5.3.6.Final</version>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.xml.bind</groupId>
+          <artifactId>jaxb-api</artifactId>
+          <version>2.3.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-core</artifactId>
+          <version>2.3.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.sun.xml.bind</groupId>
+          <artifactId>jaxb-impl</artifactId>
+          <version>2.3.0</version>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.activation</groupId>
+          <artifactId>activation</artifactId>
+          <version>1.1.1</version>
+      </dependency>
+      <!-- Hibernate -> DEPENDENCY END -->
+
+      <!-- Bean validation - while form is being submitted -> DEPENDENCY START -->
+      <dependency>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+          <version>2.0.1.Final</version>
+      </dependency>
+      <!-- Bean validation - while form is being submitted -> DEPENDENCY END -->
+
+      <!-- Spring context -> DEPENDENCY START -->
       <dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-context</artifactId>
 		<version>5.1.7.RELEASE</version>
       </dependency>
+      <!-- Spring context -> DEPENDENCY END -->
 
+      <!-- Spring webMvc -> DEPENDENCY START -->
       <dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-webmvc</artifactId>
 		<version>5.1.7.RELEASE</version>
       </dependency>
+      <!-- Spring webMvc -> DEPENDENCY END -->
 
-
+      <!-- Spring web -> DEPENDENCY START -->
       <dependency>
 		<groupId>org.springframework</groupId>
 		<artifactId>spring-web</artifactId>
 		<version>5.1.7.RELEASE</version>
       </dependency>
+      <!-- Spring web -> DEPENDENCY END -->
 
       <dependency>
 		<groupId>javax.servlet</groupId>
@@ -55,43 +108,6 @@
 		  <artifactId>javax.servlet.jsp-api</artifactId>
 		  <version>2.3.1</version>
 		  <scope>provided</scope>
-	  </dependency>
-
-	  <dependency>
-		  <groupId>mysql</groupId>
-		  <artifactId>mysql-connector-java</artifactId>
-		  <version>8.0.12</version>
-	  </dependency>
-
-	  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
-	  <dependency>
-		  <groupId>org.hibernate</groupId>
-		  <artifactId>hibernate-entitymanager</artifactId>
-		  <version>5.3.6.Final</version>
-	  </dependency>
-
-	  <dependency>
-		  <groupId>javax.xml.bind</groupId>
-		  <artifactId>jaxb-api</artifactId>
-		  <version>2.3.1</version>
-	  </dependency>
-
-	  <dependency>
-		  <groupId>com.sun.xml.bind</groupId>
-		  <artifactId>jaxb-core</artifactId>
-		  <version>2.3.0</version>
-	  </dependency>
-
-	  <dependency>
-		  <groupId>com.sun.xml.bind</groupId>
-		  <artifactId>jaxb-impl</artifactId>
-		  <version>2.3.0</version>
-	  </dependency>
-
-	  <dependency>
-		  <groupId>javax.activation</groupId>
-		  <artifactId>activation</artifactId>
-		  <version>1.1.1</version>
 	  </dependency>
 
   </dependencies>

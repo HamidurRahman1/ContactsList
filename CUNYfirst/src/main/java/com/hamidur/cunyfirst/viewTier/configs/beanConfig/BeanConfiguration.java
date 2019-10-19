@@ -16,6 +16,7 @@ import com.hamidur.cunyfirst.viewTier.models.TransferInfo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -30,15 +31,12 @@ public class BeanConfiguration
     public Student student()
     {
         Student student = new Student();
-        student.setFirstName("Hamidur");
-        student.setLastName("Rahman");
-
-//        student.setAddress(address());
-//        student.setContact(contact());
-//        student.setHighSchoolInfo(highSchoolInfo());
-//        student.setTransferInfo(transferInfo());
-//        student.setLogin(login());
-//        student.setFafsas(fafsas());
+        student.setAddress(address());
+        student.setContact(contact());
+        student.setHighSchoolInfo(highSchoolInfo());
+        student.setTransferInfo(transferInfo());
+        student.setLogin(login());
+        student.setFafsas(fafsas());
 
         return student;
     }

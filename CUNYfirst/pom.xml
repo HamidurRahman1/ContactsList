@@ -75,40 +75,22 @@
       </dependency>
       <!-- Spring webMvc -> DEPENDENCY END -->
 
-      <!-- Spring web -> DEPENDENCY START -->
-      <dependency>
-		<groupId>org.springframework</groupId>
-		<artifactId>spring-web</artifactId>
-		<version>5.1.7.RELEASE</version>
-      </dependency>
-      <!-- Spring web -> DEPENDENCY END -->
-
-      <dependency>
-		<groupId>javax.servlet</groupId>
-		<artifactId>servlet-api</artifactId>
-		<version>2.5</version>
-		<scope>provided</scope>
-      </dependency>
-
+      <!-- Servlet -> DEPENDENCY START -->
 	  <dependency>
 		  <groupId>javax.servlet</groupId>
 		  <artifactId>javax.servlet-api</artifactId>
 		  <version>4.0.1</version>
 		  <scope>provided</scope>
 	  </dependency>
+      <!-- Servlet -> DEPENDENCY END -->
 
+      <!-- JsTL -> DEPENDENCY START -->
       <dependency>
           <groupId>javax.servlet</groupId>
           <artifactId>jstl</artifactId>
           <version>1.2</version>
       </dependency>
-
-	  <dependency>
-		  <groupId>javax.servlet.jsp</groupId>
-		  <artifactId>javax.servlet.jsp-api</artifactId>
-		  <version>2.3.1</version>
-		  <scope>provided</scope>
-	  </dependency>
+      <!-- JsTL -> DEPENDENCY END -->
 
   </dependencies>
   

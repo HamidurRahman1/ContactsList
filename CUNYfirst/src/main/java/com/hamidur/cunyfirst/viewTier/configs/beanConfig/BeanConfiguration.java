@@ -16,7 +16,6 @@ import com.hamidur.cunyfirst.viewTier.models.TransferInfo;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.ModelAttribute;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;

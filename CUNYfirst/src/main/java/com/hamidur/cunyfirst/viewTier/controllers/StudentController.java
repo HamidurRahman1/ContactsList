@@ -8,26 +8,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttributes;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/student")
 public class StudentController
 {
     @GetMapping("/login")
-    public ModelAndView studentLogin()
+    public String studentLogin(Model model)
     {
-        ModelAndView modelAndView = new ModelAndView("student/login");
-        modelAndView.addObject("login", new Login());
-        return modelAndView;
+        model.addAttribute("login", new Login());
+        return "student/login";
     }
 
     @PostMapping("/processLogin")
-    public ModelAndView processLogin(@ModelAttribute("login") Login login)
+    public String processLogin(@ModelAttribute("login") Login login, Model model)
     {
-        ModelAndView modelAndView = new ModelAndView("student/display");
-        modelAndView.addObject("login", login);
-        return modelAndView;
+        model.addAttribute("login", login);
+        System.out.println(login);
+
+        // validate login, check if user active
+        return "student/display";
     }
 }

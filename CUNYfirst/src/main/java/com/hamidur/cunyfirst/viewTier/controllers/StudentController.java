@@ -20,13 +20,20 @@ public class StudentController
         return "student/login";
     }
 
+
+    /*
+    * this url will be called after the submission of login. Login form has a Login() attribute which can only
+    * be accessible in display.jsp if this method takes Login object from/as @ModelAttribute, which will then be
+    * available to access in display.jsp
+    * */
     @PostMapping("/processLogin")
     public String processLogin(@ModelAttribute("login") Login login, Model model)
     {
-        model.addAttribute("login", login);
-        System.out.println(login);
+        model.addAttribute("test", "testmessage");
 
-        // validate login, check if user active
+        // validate if correct then forward it to display
+        // redirect if wrong username or password
+
         return "student/display";
     }
 }

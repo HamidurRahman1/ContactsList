@@ -8,5 +8,6 @@
 </head>
 <body>
         Entered login is : ${login.username} ${login.password} ${test}
+        ${sessionScope.get("student")}
 </body>
 </html>

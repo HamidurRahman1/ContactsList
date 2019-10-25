@@ -7,12 +7,17 @@ import com.hamidur.cunyfirst.daoTier.daoServices.StudentService;
 
 public class ApiService
 {
-    private StudentService studentService;
-    private InstructorService instructorService;
-    private CourseService courseService;
-    private AdminService adminService;
+    private final StudentService studentService;
+    private final InstructorService instructorService;
+    private final CourseService courseService;
+    private final AdminService adminService;
 
-    public ApiService() {}
-
-
+    public ApiService(final StudentService studentService, final InstructorService instructorService,
+                      final CourseService courseService, final AdminService adminService)
+    {
+        this.studentService = studentService;
+        this.instructorService = instructorService;
+        this.courseService = courseService;
+        this.adminService = adminService;
+    }
 }

@@ -198,7 +198,7 @@ public class DaoRelatedTester
 //    {
 //        return session.createQuery("from Student").list();
 //    }
-//
+
 //    private static List<Term> getTerms(Session session)
 //    {
 //        return session.createQuery("from Term").list();

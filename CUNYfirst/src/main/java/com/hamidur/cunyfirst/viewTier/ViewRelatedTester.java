@@ -1,6 +1,7 @@
 package com.hamidur.cunyfirst.viewTier;
 
 import com.hamidur.cunyfirst.viewTier.models.Address;
+import com.hamidur.cunyfirst.viewTier.models.Admin;
 import com.hamidur.cunyfirst.viewTier.models.Contact;
 import com.hamidur.cunyfirst.viewTier.models.Gender;
 import com.hamidur.cunyfirst.viewTier.models.HighSchoolInfo;
@@ -28,6 +29,11 @@ public class ViewRelatedTester
         student.setTransferInfo(testTransferInfo());
         student.setLogin(testLogin());
         return student;
+    }
+
+    public static Admin testAdmin()
+    {
+        return new Admin("Hamidur", "Rahman", "ssn", LocalDate.now(), Gender.MALE);
     }
     
     public static Address testAddress()

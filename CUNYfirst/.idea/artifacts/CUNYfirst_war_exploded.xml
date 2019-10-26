@@ -36,6 +36,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

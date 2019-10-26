@@ -38,8 +38,8 @@ public class StudentController
 
     /*
     * this url will be called after the submission of login. Login form has a Login() attribute which can only
-    * be accessible in display.jsp if this method takes Login object from/as @ModelAttribute, which will then be
-    * available to access in display.jsp
+    * be accessible in services.jsp if this method takes Login object from/as @ModelAttribute, which will then be
+    * available to access in services.jsp
     * */
     @PostMapping("/processLogin")
     public String processLogin(@ModelAttribute("login") Login login, HttpSession session)

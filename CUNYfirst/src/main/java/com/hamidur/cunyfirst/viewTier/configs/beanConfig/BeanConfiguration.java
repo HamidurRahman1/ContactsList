@@ -1,6 +1,10 @@
 package com.hamidur.cunyfirst.viewTier.configs.beanConfig;
 
 
+import com.hamidur.cunyfirst.daoTier.daoServices.AdminService;
+import com.hamidur.cunyfirst.daoTier.daoServices.CourseService;
+import com.hamidur.cunyfirst.daoTier.daoServices.InstructorService;
+import com.hamidur.cunyfirst.daoTier.daoServices.StudentService;
 import com.hamidur.cunyfirst.serviceTier.ApiService;
 import com.hamidur.cunyfirst.viewTier.models.Address;
 import com.hamidur.cunyfirst.viewTier.models.Admin;
@@ -23,6 +27,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
@@ -152,12 +157,44 @@ public class BeanConfiguration
     {
         return new Person();
     }
-//
-//    @Bean
-//    @Scope
-//    @Lazy
-//    public ApiService apiService()
-//    {
-//        return new ApiService();
-//    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
+    public ApiService apiService()
+    {
+        return new ApiService(studentService(), instructorService(), courseService(), adminService());
+    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
+    public StudentService studentService()
+    {
+        return new StudentService();
+    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
+    public CourseService courseService()
+    {
+        return new CourseService();
+    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
+    public AdminService adminService()
+    {
+        return new AdminService();
+    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
+    public InstructorService instructorService()
+    {
+        return new InstructorService();
+    }
 }

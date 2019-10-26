@@ -1,6 +1,7 @@
 package com.hamidur.cunyfirst.viewTier.controllers;
 
 import com.hamidur.cunyfirst.serviceTier.ApiService;
+import com.hamidur.cunyfirst.viewTier.ViewRelatedTester;
 import com.hamidur.cunyfirst.viewTier.models.Login;
 
 import com.hamidur.cunyfirst.viewTier.models.Student;
@@ -19,12 +20,19 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/student")
 public class StudentController
 {
-//    private ApplicationContext applicationContext;
+    private final ApplicationContext applicationContext;
+    private final ApiService apiService;
+
+    public StudentController(final ApplicationContext applicationContext, final ApiService apiService)
+    {
+        this.applicationContext = applicationContext;
+        this.apiService = apiService;
+    }
 
     @GetMapping("/login")
     public String studentLogin(Model model)
     {
-//        model.addAttribute("login", applicationContext.getBean(Login.class));
+        model.addAttribute("login", applicationContext.getBean(Login.class));
         return "student/login";
     }
 
@@ -34,13 +42,19 @@ public class StudentController
     * available to access in display.jsp
     * */
     @PostMapping("/processLogin")
-    public String processLogin(@ModelAttribute("login") Login login, Model model, HttpSession session)
+    public String processLogin(@ModelAttribute("login") Login login, HttpSession session)
     {
-        model.addAttribute("test", "testmessage");
-        session.setAttribute("student", "Student Obj");
-        // validate if correct then forward it to display
-        // redirect if wrong username or password
+//        session.setAttribute("login", login);
+        Student student = ViewRelatedTester.testStudent();
+        session.setAttribute("student", student);
+        return "redirect:/student/display";
+    }
 
+    @GetMapping("/display")
+    public String displayStudent()
+    {
         return "student/display";
     }
+
+
 }

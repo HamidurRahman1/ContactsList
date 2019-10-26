@@ -18,49 +18,45 @@ public class ViewRelatedTester
         testStudent();
     }
     
-    private static void testStudent()
+    public static Student testStudent()
     {
-        Student student = new Student("first", "l", "ssn", LocalDate.now(), Gender.MALE);
+        Student student = new Student("Hamidur", "Rahman", "ssn", LocalDate.now(), Gender.MALE);
+        student.setStudentId(100000001);
         student.setAddress(testAddress());
         student.setContact(testContact());
         student.setHighSchoolInfo(testHighSchoolInfo());
         student.setTransferInfo(testTransferInfo());
         student.setLogin(testLogin());
-        
-        System.out.println(student.getAddress());
-        System.out.println(student.getContact());
-        System.out.println(student.getHighSchoolInfo());
-        System.out.println(student.getTransferInfo());
-        System.out.println(student.getLogin());
+        return student;
     }
     
-    private static Address testAddress()
+    public static Address testAddress()
     {
-        return new Address("st", "crst", "c", "s", "z");
+        return new Address("st", "crst", "city", "street", "zipcode");
     }
     
-    private static Contact testContact()
+    public static Contact testContact()
     {
-        return new Contact("1112220000", "personal", "college");
+        return new Contact("1112220000", "personal@email.com", "college@college.edu");
     }
     
-    private static HighSchoolInfo testHighSchoolInfo()
+    public static HighSchoolInfo testHighSchoolInfo()
     {
-        return new HighSchoolInfo("schoolName", 2014, "city", "country");
+        return new HighSchoolInfo("Model High School", 2014, "Sylhet", "BD");
     }
     
-    private static TransferInfo testTransferInfo()
+    public static TransferInfo testTransferInfo()
     {
         return new TransferInfo("schoolName", testTerm());
     }
     
-    private static Term testTerm()
+    public static Term testTerm()
     {
         return new Term("Spring", 2016);
     }
     
-    private static Login testLogin()
+    public static Login testLogin()
     {
-        return new Login("username", "password", false);
+        return new Login("hamidur.rahman@college.edu", "hashfunction", true);
     }
 }

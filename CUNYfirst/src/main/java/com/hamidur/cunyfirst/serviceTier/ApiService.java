@@ -4,7 +4,9 @@ import com.hamidur.cunyfirst.daoTier.daoServices.AdminService;
 import com.hamidur.cunyfirst.daoTier.daoServices.CourseService;
 import com.hamidur.cunyfirst.daoTier.daoServices.InstructorService;
 import com.hamidur.cunyfirst.daoTier.daoServices.StudentService;
+import org.springframework.stereotype.Service;
 
+@Service
 public class ApiService
 {
     private final StudentService studentService;

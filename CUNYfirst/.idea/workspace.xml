@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9fb1478-4bf2-49e3-9b58-583610bd5335" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c9fb1478-4bf2-49e3-9b58-583610bd5335" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +18,7 @@
     <session id="-2107944168">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="41" />
+          <entry key="project.closed" value="42" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="10" />
           <entry key="project.open.time.10" value="3" />
@@ -95,13 +93,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminName.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="220">
+              <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/insertStudent.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="264">
@@ -110,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+            <state relative-caret-position="314">
+              <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
               <folding>
                 <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
@@ -127,6 +125,8 @@
                 <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" />
                 <element signature="n#dependency#10;n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="n#dependency#11;n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="n#dependency#12;n#dependencies#0;n#project#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -673,7 +673,7 @@
       <workItem from="1572057031415" duration="74000" />
       <workItem from="1572127491401" duration="1486000" />
       <workItem from="1572129100039" duration="1608000" />
-      <workItem from="1572356228228" duration="140000" />
+      <workItem from="1572356228228" duration="253000" />
     </task>
     <servers />
   </component>
@@ -686,7 +686,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56507000" />
+    <option name="totallyTimeSpent" value="56620000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1045,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminName.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hamidur/cunyfirst/viewTier/controllers/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -1059,17 +1052,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/insertStudent.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+        <state relative-caret-position="314">
+          <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
           <folding>
             <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" />
@@ -1082,7 +1068,23 @@
             <element signature="n#dependency#8;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#9;n#dependencies#0;n#project#0;n#!!top" />
             <element signature="n#dependency#10;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#11;n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#dependency#12;n#dependencies#0;n#project#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/adminName.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/insertStudent.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

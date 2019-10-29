@@ -92,19 +92,22 @@
       </dependency>
       <!-- JsTL -> DEPENDENCY END -->
 
-      <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/jsp-api -->
+      <!-- JSP -> DEPENDENCY START -->
       <dependency>
           <groupId>javax.servlet.jsp</groupId>
           <artifactId>jsp-api</artifactId>
           <version>2.1</version>
           <scope>provided</scope>
       </dependency>
+      <!-- JSP -> DEPENDENCY END -->
 
+      <!-- TAGLIBS -> DEPENDENCY START -->
       <dependency>
           <groupId>taglibs</groupId>
           <artifactId>standard</artifactId>
           <version>1.1.2</version>
       </dependency>
+      <!-- TAGLIBS -> DEPENDENCY END -->
 
   </dependencies>
   

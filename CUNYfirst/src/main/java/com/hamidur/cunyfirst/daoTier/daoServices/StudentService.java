@@ -31,18 +31,12 @@ public class StudentService
         Session session = sessionFactory.openSession();
         session.beginTransaction();
 
-        Student daoStudent = new Student();
-
-        // set student property
-        daoStudent.setPerson(new Person(student.getFirstName(), student.getLastName(), student.getSsn(),
-                student.getDateOfBirth(), Utility.toDaoGender(student.getGender())));
-        daoStudent.addAddress(Utility.toDaoAddress(student.getAddress()));
-        daoStudent.setContact(Utility.toDaoContact(student.getContact()));
-        daoStudent.setHighSchoolInfo(Utility.toDaoHighSchoolInfo(student.getHighSchoolInfo()));
+        Student daoStudent = Utility.toDaoStudent(student);
 
         daoStudent.getAddresses().iterator().next().setStudent(daoStudent);
         daoStudent.getContact().setStudent(daoStudent);
         daoStudent.getHighSchoolInfo().setStudent(daoStudent);
+        daoStudent.getTransferInfo().setStudent(daoStudent);
 
         // save student with property
         session.save(daoStudent);
@@ -66,46 +60,22 @@ public class StudentService
         return daoStudent.getStudentId();
     }
 
-    public void getStudent(Integer studentId) {}
+    public com.hamidur.cunyfirst.viewTier.models.Student getStudentById(Integer studentId)
+    {
+        Session session = sessionFactory.openSession();
+        Student student = session.get(Student.class, studentId);
+        session.close();
+        return Utility.toViewStudent(student);
+    }
+
+    public void getStudentBySSN(String ssn)
+    {
+
+    }
+
+    public void getStudentByLogin(String userName, String password) {}
 
     public void getStudents() {}
-
-    public void updateStudent(com.hamidur.cunyfirst.viewTier.models.Student student) {}
-
-    public void deleteStudent(com.hamidur.cunyfirst.viewTier.models.Student student) {}
-
-    public void insertStudentAddress(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Address address) {}
-    
-    public void getStudentAddress(Integer studentId) {}
-
-    public void updateStudentAddress(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Address address) {}
-
-    public void insertStudentContact(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Contact contact) {}
-    
-    public void getStudentContact(Integer studentId) {}
-
-    public void updateStudentContact(Integer studentId, com.hamidur.cunyfirst.viewTier.models.Contact contact)
-    {}
-    
-    public void insertStudentHighSchoolInfo
-            (Integer studentId, com.hamidur.cunyfirst.viewTier.models.HighSchoolInfo highSchoolInfo)
-    {}
-    
-    public void getStudentHighSchoolInfo(Integer studentId)
-    {}
-    
-    public void updateStudentHighSchoolInfo
-            (Integer studentId, com.hamidur.cunyfirst.viewTier.models.HighSchoolInfo highSchoolInfo) {}
-    
-    public void insertStudentTransferInfo
-            (Integer studentId, com.hamidur.cunyfirst.viewTier.models.TransferInfo transferInfo) {}
-    
-    public void getStudentTransferInfo(Integer studentId)
-    {}
-    
-    public void updateStudentTransferInfo
-            (Integer studentId, com.hamidur.cunyfirst.viewTier.models.TransferInfo transferInfo)
-    {}
     
     public void validateLogin(String username, String password)
     {}
@@ -132,10 +102,6 @@ public class StudentService
     public void insertStudentCourses(Integer studentId, Set<com.hamidur.cunyfirst.viewTier.models.Course> courses) {}
     
     public void getStudentCourses(Integer studentId) {}
-
-    public void getStudentById(Integer studentId) {}
-    public void getStudentBySSN(String ssn) {}
-    public void getStudentByLogin(String userName, String password) {}
 
     public boolean isStudentExists(Integer studentId) {return false;}
     public boolean isStudentExists(String ssn) {return false;}

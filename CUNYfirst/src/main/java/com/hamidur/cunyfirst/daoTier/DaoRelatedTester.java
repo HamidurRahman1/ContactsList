@@ -21,6 +21,7 @@ import com.hamidur.cunyfirst.daoTier.models.TransferInfo;
 
 import com.hamidur.cunyfirst.daoTier.util.HibernateUtil;
 
+import com.hamidur.cunyfirst.daoTier.util.HibernateUtility;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
@@ -37,9 +38,7 @@ public class DaoRelatedTester
     public static void main(String[] args)
     {
         Student student = null;
-        SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
-        
-        Session session = sessionFactory.openSession();
+        Session session = HibernateUtility.getInstance().getSessionFactory().openSession();
         session.beginTransaction();
         
         student = session.get(Student.class, 10000002);
@@ -51,7 +50,7 @@ public class DaoRelatedTester
         session.update(contact);
         session.getTransaction().commit();
         session.close();
-        HibernateUtil.closeSessionFactory();
+        HibernateUtility.getInstance().closeSessionFactory();
     }
     
 //    private static void insertInstructorCourses(Session session, Instructor instructor)

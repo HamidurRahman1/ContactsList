@@ -5,6 +5,7 @@ import com.hamidur.cunyfirst.daoTier.daoServices.AdminService;
 import com.hamidur.cunyfirst.daoTier.daoServices.CourseService;
 import com.hamidur.cunyfirst.daoTier.daoServices.InstructorService;
 import com.hamidur.cunyfirst.daoTier.daoServices.StudentService;
+import com.hamidur.cunyfirst.daoTier.util.HibernateUtility;
 import com.hamidur.cunyfirst.serviceTier.ApiService;
 import com.hamidur.cunyfirst.viewTier.models.Address;
 import com.hamidur.cunyfirst.viewTier.models.Admin;
@@ -34,7 +35,8 @@ import java.util.Map;
 import java.util.Set;
 
 @Configuration
-@ComponentScan(basePackages = {"com.hamidur.cunyfirst.viewTier.models"})
+@ComponentScan(basePackages = {"com.hamidur.cunyfirst.viewTier.models", "com.hamidur.cunyfirst.daoTier.models",
+        "com.hamidur.cunyfirst.daoTier.util", "com.hamidur.cunyfirst.daoTier.daoServices"})
 @Lazy
 public class BeanConfiguration
 {
@@ -160,6 +162,14 @@ public class BeanConfiguration
     @Bean
     @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
     @Lazy
+    public HibernateUtility hibernateUtility()
+    {
+        return HibernateUtility.getInstance();
+    }
+
+    @Bean
+    @Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+    @Lazy
     public ApiService apiService()
     {
         return new ApiService(studentService(), instructorService(), courseService(), adminService());
@@ -170,7 +180,7 @@ public class BeanConfiguration
     @Lazy
     public StudentService studentService()
     {
-        return new StudentService();
+        return new StudentService(hibernateUtility());
     }
 
     @Bean
@@ -178,7 +188,7 @@ public class BeanConfiguration
     @Lazy
     public CourseService courseService()
     {
-        return new CourseService();
+        return new CourseService(hibernateUtility());
     }
 
     @Bean
@@ -186,7 +196,7 @@ public class BeanConfiguration
     @Lazy
     public AdminService adminService()
     {
-        return new AdminService();
+        return new AdminService(hibernateUtility());
     }
 
     @Bean
@@ -194,6 +204,6 @@ public class BeanConfiguration
     @Lazy
     public InstructorService instructorService()
     {
-        return new InstructorService();
+        return new InstructorService(hibernateUtility());
     }
 }

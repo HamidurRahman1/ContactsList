@@ -1,19 +1,25 @@
 package com.hamidur.cunyfirst.daoTier.daoServices;
 
+import com.hamidur.cunyfirst.daoTier.util.HibernateUtility;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
 public class CourseService
 {
-    public CourseService() {}
-    
-    public void insertCourse(com.hamidur.cunyfirst.viewTier.models.Course course) {}
-    
-    public void getCourse(com.hamidur.cunyfirst.viewTier.models.CourseName courseName,
-                          com.hamidur.cunyfirst.viewTier.models.CourseLevel courseLevel) {}
-    
-    public void getCourses() {}
-    
-    public void getCourses(com.hamidur.cunyfirst.viewTier.models.Term term) {}
-    
-    public void updateCourse(com.hamidur.cunyfirst.viewTier.models.Instructor instructor) {}
-    
-    public void deleteCourse(com.hamidur.cunyfirst.viewTier.models.Instructor instructor) {}
+    private final SessionFactory sessionFactory;
+
+    public CourseService(final HibernateUtility hibernateUtility)
+    {
+        this.sessionFactory = hibernateUtility.getSessionFactory();
+    }
+
+    public void insertCourse(com.hamidur.cunyfirst.viewTier.models.Course course)
+    {
+        Session session = sessionFactory.openSession();
+//        Course daoCourse = Utility.
+        session.flush();
+        session.clear();
+        session.getTransaction().commit();
+        session.close();
+    }
 }

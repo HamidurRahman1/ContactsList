@@ -1,19 +1,39 @@
 package com.hamidur.cunyfirst.daoTier.daoServices;
 
+import com.hamidur.cunyfirst.daoTier.models.Instructor;
+import com.hamidur.cunyfirst.daoTier.util.HibernateUtility;
+import com.hamidur.cunyfirst.daoTier.util.Utility;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
 public class InstructorService
 {
-    public InstructorService() {}
-    
-    public void insertInstructor(com.hamidur.cunyfirst.viewTier.models.Instructor instructor) {}
-    
-    public void getInstructor(Integer studentId) {}
-    
-    public void getInstructors() {}
-    
-    public void updateInstructor(com.hamidur.cunyfirst.viewTier.models.Instructor instructor) {}
-    
-    public void deleteInstructor(com.hamidur.cunyfirst.viewTier.models.Instructor instructor) {}
-    
-    public void updateStudentGrade(Integer studentId, Integer instructorId,
-                                   com.hamidur.cunyfirst.viewTier.models.Grade grade) {}
+    private final SessionFactory sessionFactory;
+
+    public InstructorService(final HibernateUtility hibernateUtility)
+    {
+        this.sessionFactory = hibernateUtility.getSessionFactory();
+    }
+
+    public void insertInstructor(com.hamidur.cunyfirst.viewTier.models.Instructor instructor)
+    {
+        Session session = sessionFactory.openSession();
+        Instructor daoInstructor = Utility.toDaoInstructor(instructor);
+        session.save(daoInstructor);
+        session.flush();
+        session.clear();
+        session.getTransaction().commit();
+        session.close();
+    }
+
+    public void getInstructor(Integer instructorId)
+    {
+        Session session = sessionFactory.openSession();
+        Instructor daoInstructor = session.get(Instructor.class, instructorId);
+        // return instructors
+        session.flush();
+        session.clear();
+        session.getTransaction().commit();
+        session.close();
+    }
 }

@@ -10,10 +10,10 @@ import java.util.Set;
 public class Student extends Person implements Serializable
 {
     private Integer studentId;
-    private Address address;
-    private Contact contact;
-    private HighSchoolInfo highSchoolInfo;
-    private TransferInfo transferInfo;
+    private Address address = new Address();
+    private Contact contact = new Contact();
+    private HighSchoolInfo highSchoolInfo = new HighSchoolInfo();
+    private TransferInfo transferInfo = new TransferInfo();
     private Login login;
     private Map<SecurityQuestion, String> questionsAns = new LinkedHashMap <>(3);
     private Set<FAFSA> fafsas = new LinkedHashSet <>();

@@ -44,7 +44,12 @@ public class BeanConfiguration
     @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public Student student()
     {
-        return new Student();
+        Student student = new Student();
+        student.setAddress(address());
+        student.setContact(contact());
+        student.setHighSchoolInfo(highSchoolInfo());
+        student.setTransferInfo(transferInfo());
+        return student;
     }
 
     @Bean
@@ -206,4 +211,6 @@ public class BeanConfiguration
     {
         return new InstructorService(hibernateUtility());
     }
+
+
 }

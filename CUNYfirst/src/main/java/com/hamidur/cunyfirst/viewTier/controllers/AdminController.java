@@ -17,6 +17,7 @@ import javax.servlet.http.HttpSession;
 @RequestMapping("/admin")
 public class AdminController
 {
+
     @GetMapping("/login")
     public String studentLogin(Model model)
     {
@@ -38,10 +39,22 @@ public class AdminController
         return "admin/services";
     }
 
-    @GetMapping("/insertStudent")
+    @GetMapping("/student/insertStudent")
     public String insertStudent(Model model)
     {
-        model.addAttribute("addStudent", new Student());
+        model.addAttribute("newStudent", new Student());
         return "admin/insertStudent";
+    }
+
+    @PostMapping("/student/process")
+    public String processNewStudent(@ModelAttribute("newStudent") Student student, Model model)
+    {
+        // insert into db then redirect if success else error
+        System.out.println(student);
+        System.out.println(student.getAddress());
+        System.out.println(student.getContact());
+        System.out.println(student.getHighSchoolInfo());
+        model.addAttribute("id", 1001);
+        return "/admin/studentAdded";
     }
 }

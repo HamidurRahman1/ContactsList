@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="CUNYfirst:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="CUNYfirst.war">
-      <element id="artifact" artifact-name="CUNYfirst:war exploded" />
-    </root>
-  </artifact>
-</component>
